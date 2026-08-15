@@ -14,14 +14,14 @@
           text-align: center;
           width: 100%;
           box-sizing: border-box;
-          padding: 25px 40px;
+          padding: 25px 20px 40px;
         }
         header h1 {
           font-size: 50px;
-          margin: 5px 0 20px;
+          margin: 0 0 20px;
         }
         header p {
-          font-size: 25px;
+          font-size: 26px;
           margin: 0;
         }
 
@@ -30,18 +30,19 @@
         main{ 
           background-color:#2F0148;
           color: rgb(219, 159, 8);
-          padding: 35px 50px;
+          min-height: 100vh;
+          padding: 10px 40px 50px;
         }
       
       /*foto da autora*/
         
         .autora {
           text-align: center;
-          margin-bottom: 40px;
+          margin-bottom: 5px;
         }
         .foto-autora {
-            width: 280px;
-            height: 280px;
+            width: 190px;
+            height: 190px;
             object-fit: cover;
             display: block;
             margin: 0 auto;
@@ -53,35 +54,51 @@
         
         .titulo-livros {
             text-align: center;
-            font-size: 38px;
-            margin: 30px 0 45px;
+            font-size: 40px;
+            margin: 5px auto 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
         }
-        
-      /*capas*/
+
+      /* linhas ao lado do título */
+
+          .titulo-livros::before,
+          .titulo-livros::after {
+            content: "";
+            width: 100px;
+            height: 3px;
+            background-color: rgb(219, 159, 8);
+} 
+      /*livro*/
         
         .livro {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-
-            max-width: 1100px;
-            margin: 0 auto 50px;
+            gap: 25px;
+            max-width: 850px;
+            margin: 0 auto 30px;
         }
+
+      /*livro-texto*/
+
         .livro-texto {
             flex: 1;
-            font-size: 20px;
-            line-height: 1.6;
         }
          .livro h3 {
-            font-size: 30px;
-            margin-top: 0;
+            font-size: 28px;
+            margin: 0 0 0px;
         }
+
+      /*capa-livro*/
+
         .capa-livro {
-            width: 230px;
-            height: 330px;
+            width: 145px;
+            height: 190px;
             object-fit: cover;
             display: block;
+            flex-shrink: 0;
         }
 
       /*segundo livro*/
@@ -108,7 +125,7 @@
 
     <header>
       <h1> A autora Ali Hazelwood </h1> 
-        <p> Uma autora que conquistou as pessoas com seus livros de romence científico. </p>
+        <p><em> Uma autora que conquistou as pessoas com seus livros de romence científico.</em></p>
 
 
     </header> 

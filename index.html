@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site 1</title>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ali Hazelwood</title>
 
-<style> 
-      header{ 
-        background-color: rgb(219, 159, 8);
-        color: #2C0840;
-        text-align: center;
-        max-width: 1000px;
-        margin: 0 auto;
-        font-size: 38px;
+    <style> 
 
-      }
-      main{ 
-        background-color:#2C0840;
-        color: rgb(219, 159, 8);
-        text-align: left;
+      /*cabeçalho*/
+        header{ 
+          background-color: rgb(219, 159, 8);
+          color: #511770;
+          text-align: center;
+          max-width: 1000px;
+          margin: 0 auto;
+          font-size: 20px;
+        }
+        header h1 {
+          font-size: 50px;
+          margin: 10px 0 20px;
+        }
+        header p {
+          font-size: 25px;
+          margin: 0;
+        }
 
-      }
+      /*parte principal*/
 
+        main{ 
+          background-color:#511770;
+          color: rgb(219, 159, 8);
+          padding: 30px 50px;
+        }
+      
+      /*foto da autora*/
+        
+        .autora {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        .foto-autora {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+        }
+      
+      /*títulos*/
+        
+        .titulo {
+          text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+        
+      /*capas*/
+        
+        .livro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
 
+            max-width: 1100px;
+            margin: 0 auto 50px;
 
-      img{
+            padding: 25px;
 
-        width: 400px;
-        height: 400px;
-        display: block;
-        margin: 0 auto;
-        float: right;
-      }
+            border: 2px solid rgb(219, 159, 8);
+            border-radius: 15px;
+        }
+        .livro-texto {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+         .livro h3 {
+            font-size: 27px;
+            margin-top: 0;
+        }
+        .capa-livro {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+        }
 
+      /*segundo livro*/
+        .livro-invertido {
+            flex-direction: row-reverse;
+        }
+      /*botão*/
 
+    </style>    
 
+  </head>
 
+  <body>
 
-</style>    
-
-
-
-
-
-
-</head>
-<body>
-
- <header>
+    <header>
       <h1> A autora Ali Hazelwood </h1> 
-      <P> Uma autora que conquistou as pessoas com seus livros de romence cientifico. </P>
+        <p> Uma autora que conquistou as pessoas com seus livros de romence científico. </p>
 
 
-        </header> 
+    </header> 
 
 
- <main>
- <div_1>
+  <main>
 
-  <img src="ali ha...webp" alt="foto da autora dos livros que serão citados">
+  <section class="autora"></section><img src="ali ha...webp" alt="Foto da autora Ali Hazelwood">
 
 
 
@@ -81,7 +133,7 @@
  </div_1>
 
  <div2> 
-    <p> Amor, Teoricamente: Nesse livro a personagem Elsie Hannaway está a procura de um emprego melhor 
+      <p> Amor, Teoricamente: Nesse livro a personagem Elsie Hannaway está a procura de um emprego melhor 
   em sua área de atuação a física teorica, Elsie por necessidade financeira acaba tendo alguns trabalhos 
   questionaveis, com isso ela encontra um inimigo, que por conhecidencia do acaso será uma das
   pessoas responsáveis por sua contratação, Jack Smith um físico com um passado um tanto conturbado. 

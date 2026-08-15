@@ -113,10 +113,11 @@
     <section class="autora"></section><img src="ali ha...webp" alt="Foto da autora Ali Hazelwood"></section>
 
 
-      <h2 class="titulo-livros">Seus principais livros</h2>
+        <h2 class="titulo-livros">Seus principais livros</h2>
 
 
-    <section class="livro"><div class="livro">
+    <section class="livro">
+      <div class="livro">
 
         <h3>A Hipótese do Amor</h3>
           <p> O livro conta sobre uma estudante do doutorado de biologia Olive Smith, que 
@@ -125,39 +126,45 @@
           por diversos alunos por sua fama de exigente e intimidador.
             Ambos mergulham nesse namoro e 
           descombrem diversas coisas que os fazem mudar de ideia sobre o relacionamento falso. </p>      
-        </div>
+      </div>
 
-        <img class="capa-livro" src="hipotese do amor.jpg" alt="capa do livro">
+        <img class="capa-livro" src="hipotese do amor.jpg" alt="Capa do livro A Hipótese do Amor">
+    </section>
+ 
+    <section class="livro livro-invertido">
+      <div class="livro-texto"></div>
 
- </div_1>
+        <h3>Amor, Teoricamente</h3>
+          <p> Neste livro a personagem Elsie Hannaway está a procura de um emprego melhor 
+          em sua área de atuação a física teorica, Elsie por necessidade financeira acaba tendo alguns trabalhos 
+          questionaveis, com isso ela encontra um inimigo, que por conhecidencia do acaso será uma das
+          pessoas responsáveis por sua contratação, Jack Smith um físico com um passado um tanto conturbado. 
+          Com a proximidade do trabalho eles se aproximam mais do que o esperado.</p>
+    
+      </div>
 
- <div2> 
-      <p> Amor, Teoricamente: Nesse livro a personagem Elsie Hannaway está a procura de um emprego melhor 
-  em sua área de atuação a física teorica, Elsie por necessidade financeira acaba tendo alguns trabalhos 
-  questionaveis, com isso ela encontra um inimigo, que por conhecidencia do acaso será uma das
-  pessoas responsáveis por sua contratação, Jack Smith um físico com um passado um tanto conturbado. 
-  Com a proximidade do trabalho eles se aproximam mais do que o esperado.</p>
-      
-      <img src="WhatsApp Image 2026-06-23 at 09.28.42.jpeg" alt="capa do livro  Amor, Teoricamente">
-       
-   </div2>
+        <img class="capa-livro" src="WhatsApp Image 2026-06-23 at 09.28.42.jpeg" alt="capa do livro  Amor, Teoricamente">
+    </section>
 
- <div3> 
-     <p> Arazão do Amor: Nessa história acompanhamos a neurocientista Bee Königswasser, que recebe a 
-      chance de trabalhar com a NASA na realização de um grende avanço para o meio espacial, mas para
-      isso ela tem que trabalhar em conjunto com o engenheiro Levi Ward, seu antigo colega e enemi 
-      do doutorado. Juntos eles descobrem uma serie de problemas e também resolvem mals entendidos 
-      do passado.
+ 
+    <section class="livro">
+      <div class="livro-texto"></div>
 
-        <img src="WhatsApp Image 2026-06-23 at 09.28.42-2.jpeg" alt="capa do livro A Razão do Amor">
+        <h3>A Razão do Amor</h3>
+          <p> Nessa história acompanhamos a neurocientista Bee Königswasser, que recebe a 
+            chance de trabalhar com a NASA na realização de um grende avanço para o meio espacial, mas para
+            isso ela tem que trabalhar em conjunto com o engenheiro Levi Ward, seu antigo colega e enemi 
+            do doutorado. 
+             Juntos eles descobrem uma serie de problemas e também resolvem mals entendidos 
+            do passado.</p>
 
+            
+            <button>❤️<span>0</span></button>
+            
+            <img class="capa-livro" src="WhatsApp Image 2026-06-23 at 09.28.42-2.jpeg" alt="capa do livro A Razão do Amor">
+    </section>
+    
 
-
-        <button>❤️<span>0</span></button>
-
-
-    </p>
-  </div3>
   </main>
 
 
@@ -168,11 +175,12 @@
 
 </body>
 
-<script>const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
-function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
+<script>
+  const botao = document.querySelector("button");
+  botao.addEventListener("click", botaoClicado);
+  function botaoClicado() {
+  let texto = botao.querySelector("span");
+  texto.textContent++;
 }
 
 </script>

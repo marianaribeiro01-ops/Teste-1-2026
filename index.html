@@ -86,9 +86,14 @@
         .livro-texto {
             flex: 1;
         }
+        .livro p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 0;
+        }
          .livro h3 {
-            font-size: 28px;
-            margin: 0 0 0px;
+            font-size: 32px;
+            margin: 0 0 15px;
         }
 
       /*capa-livro*/
@@ -113,6 +118,7 @@
             border-radius: 25px;
             padding: 9px 25px;
             font-size: 18px;
+            font-weight: bold;
             margin-top: 15px;
             cursor: pointer;
         }
@@ -140,7 +146,7 @@
 
 
     <section class="livro">
-      <div class="livro">
+      <div class="livro-texto">
 
         <h3>A Hipótese do Amor</h3>
           <p> O livro conta sobre uma estudante do doutorado de biologia Olive Smith, que 
@@ -155,7 +161,7 @@
     </section>
  
     <section class="livro livro-invertido">
-      <div class="livro-texto"></div>
+      <div class="livro-texto">
 
         <h3>Amor, Teoricamente</h3>
           <p> Neste livro a personagem Elsie Hannaway está a procura de um emprego melhor 
@@ -171,7 +177,7 @@
 
  
     <section class="livro">
-      <div class="livro-texto"></div>
+      <div class="livro-texto">
 
         <h3>A Razão do Amor</h3>
           <p> Nessa história acompanhamos a neurocientista Bee Königswasser, que recebe a 
@@ -182,8 +188,8 @@
             do passado.</p>
 
             
-            <button>❤️<span>0</span></button>
-            
+            <button class="botao">❤️ <span>0</span></button>
+      </div>
             <img class="capa-livro" src="WhatsApp Image 2026-06-23 at 09.28.42-2.jpeg" alt="capa do livro A Razão do Amor">
     </section>
     
